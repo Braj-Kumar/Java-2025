@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
-public class Ques9{
+public class Ques11 {
     public static void main(String []args){
-        System.out.println("Enter Your number: ");
+        System.out.println("Enter Your number");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int i=0;
-        int sum  = 0;
+        int sum = 0;
         while(i<=n){
-            sum += i;
+            if(i%2 != 0){
+                sum+=i;
+            }
             i++;
         }
-        System.out.println(sum);
+        System.out.println("Sum of odd numbers are: "+ sum);
     }
 }
